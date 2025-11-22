@@ -5,7 +5,11 @@
 </template>
 
 <script>
+import Header from "../components/Header.vue"
 export default{
-    name: MainPage
+    name: "MainPage",
+    components: {
+        Header,
+    }
 }
 </script>
