@@ -2,13 +2,13 @@
     <div class="mainPage">
         <img alt="Vue logo" src="../assets/logo.png">
         <h1>This is the main page</h1>
-        <div class="grid">
-            <posts />
+
         <div class="sidebar"></div>
+        <posts></posts>
         <div class="sidebar"></div>
     </div>
 
-    </div>
+
 </template>
 
 <script>
@@ -18,7 +18,7 @@ export default{
     name: "MainPage",
     components: {
         Posts
-        
+
     }
 }
 </script>
