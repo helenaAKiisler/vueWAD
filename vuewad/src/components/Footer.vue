@@ -1,0 +1,12 @@
+<template>
+    <footer>Trallalaa trallaleelo</footer>
+</template>
+
+<script>
+export default{
+    name: "Footer",
+
+}
+</script>
+<style>
+</style>
