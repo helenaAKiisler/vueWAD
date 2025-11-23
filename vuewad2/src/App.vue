@@ -1,15 +1,13 @@
 <template>
   <main-page>
-    <header-compo></header-compo>
   </main-page>
 </template>
 
 <script>
 import MainPage from './views/MainPage.vue';
-import HeaderCompo from './components/HeaderCompo.vue';
 export default{
   components: {
-    MainPage, HeaderCompo
+    MainPage
   }
 }
 </script>
