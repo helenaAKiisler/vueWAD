@@ -2,23 +2,24 @@
     <div class="mainPage">
         <img alt="Vue logo" src="../assets/logo.png">
         <h1>This is the main page</h1>
-
         <div class="sidebar"></div>
-        <posts></posts>
+        <div class="grid">
+            <posts />
         <div class="sidebar"></div>
+        <reset-compo></reset-compo>
     </div>
-
-
+    </div>
 </template>
 
 <script>
 
 import Posts from '@/components/Posts.vue';
+import ResetCompo from "@/components/Reset.vue";
 export default{
     name: "MainPage",
     components: {
-        Posts
-
+        Posts,ResetCompo
+        
     }
 }
 </script>
@@ -40,6 +41,7 @@ export default{
     border-radius: 15px;
     box-shadow: 15%;
 }
+/*
 .grid{
     display: grid;
     grid-template-rows: auto;
@@ -48,4 +50,5 @@ export default{
     grid-template-columns: 18% 60% 18%;
     gap: 2%;
 }
+    */
 </style>

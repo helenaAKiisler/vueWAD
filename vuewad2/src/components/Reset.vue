@@ -1,19 +1,25 @@
 <template>
-    <button class="resetButton">Reset</button>
+    <div class="reset-button">
+        <button @click="resetLikes" class="reset">
+            Reset
+        </button>
+    </div>
 </template>
 
 <script>
 
 export default({
-    name:"resetCompo",
-    data: function(){
-        return{}
+    name: "ResetCompo",
+    methods: {
+        resetLikes() {
+            this.$store.commit('resetLikes');
+        }
     }
 })
 </script>
 
 <style scoped>
-.resetButton{
+.reset{
     padding:3%;
     background-color:blue;
     text-align: center;
