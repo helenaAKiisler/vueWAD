@@ -8,6 +8,7 @@
         <post-compo></post-compo>
         <div class="sidebar"></div>
     </div>
+    <reset-compo></reset-compo>
     <footer-compo></footer-compo>
     </div>
 </template>
@@ -16,10 +17,11 @@
 import HeaderCompo from "@/components/HeaderCompo.vue"
 import FooterCompo from "@/components/Footer.vue"
 import PostCompo from "@/components/Posts.vue";
+import ResetCompo from "@/components/Reset.vue";
 export default{
     name: "MainPage",
     components: {
-        HeaderCompo,PostCompo, FooterCompo
+        HeaderCompo,PostCompo,ResetCompo, FooterCompo
     }
 }
 </script>
