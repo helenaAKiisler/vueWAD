@@ -112,5 +112,16 @@ button {
 .center {
   display: flex;
   justify-content: center;
+
+  padding: 4rem 0;
  }
+
+.error-messages, .error-messages *{
+    background-color: rgb(254, 206, 213);
+}
+
+.error-messages li{
+    padding: 1rem;
+}
+
 </style>
