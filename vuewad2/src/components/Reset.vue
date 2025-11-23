@@ -20,6 +20,7 @@ export default({
 
 <style scoped>
 .reset{
+    margin-bottom:2%;
     padding:3%;
     background-color:blue;
     text-align: center;

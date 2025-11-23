@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer">Trallalaa trallaleelo</footer>
+    <footer class="footer">@Copyright 2025 Trallalaa trallaleelo</footer>
 </template>
 
 <script>
