@@ -1,16 +1,20 @@
 <template>
-  <main-page></main-page>
+  <HeaderCompo />
+  <router-view />
+  <FooterCompo />
 </template>
 
 <script>
-import MainPage from './views/MainPage.vue';
-export default{
+import HeaderCompo from './components/HeaderCompo.vue'
+import FooterCompo from './components/Footer.vue'
+
+export default {
   components: {
-    MainPage
+    HeaderCompo,
+    FooterCompo
   }
 }
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
