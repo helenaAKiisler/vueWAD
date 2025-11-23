@@ -43,31 +43,7 @@ export default createStore({
                 post.likeCount=0;
             })
         }
-        /*
-        IncreasePrice: state =>{
-            state.productList.forEach(product =>{
-                product.price += 1;
-            })
-        },
-        DecreasePrice: state => {
-            state.productList.forEach(product =>{
-                product.price -= 1;
-            })
-        }
-            */
     },
     actions: {
-        /*
-        IncreasePriceAct: act =>{
-            setTimeout(function(){
-                act.commit("IncreasePrice")
-            }, 1000)
-        },
-        DecreasePriceAct: act =>{
-            setTimeout(function(){
-                act.commit("DecreasePrice")
-            }, 1000)
-        }
-            */
     }
 })

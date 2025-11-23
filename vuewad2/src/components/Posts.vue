@@ -8,7 +8,6 @@
                     <span>{{ post.createTime }}</span>
                 </div>
                 <div class="postBody">
-                    <span>{{post.postImg }}</span>
                     <span>{{ post.postText }}</span>
                     </div>
                 <div class ="postFooter">

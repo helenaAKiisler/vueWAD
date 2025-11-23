@@ -1,7 +1,6 @@
 <template>
     <div class="mainPage">
-        <img alt="Vue logo" src="../assets/logo.png">
-        <h1>This is the main page</h1>
+        <h1>Feed</h1>
         <div class="sidebar"></div>
         <div class="grid">
             <posts />
@@ -41,14 +40,4 @@ export default{
     border-radius: 15px;
     box-shadow: 15%;
 }
-/*
-.grid{
-    display: grid;
-    grid-template-rows: auto;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    grid-template-columns: 18% 60% 18%;
-    gap: 2%;
-}
-    */
 </style>
