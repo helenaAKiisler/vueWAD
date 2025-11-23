@@ -1,10 +1,11 @@
+
 <template>
     <header class="header">
         <nav class="nav">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/signup">SignUpPage</router-link> |
-        <router-link to="/about">About</router-link>
-    </nav>
+            <router-link to="/">Home</router-link> |
+            <router-link :to="'/signup'">Sign-Up</router-link> |
+            <router-link :to="'/about'">About</router-link>
+        </nav>
     </header>
 </template>
 
@@ -25,8 +26,16 @@ export default{
     justify-content: space-between;
     background-color: lightskyblue;
 }
-.header{
+.header {
+    top: 0;
+    display: flex;
+    position: sticky;
     background-color: lightskyblue;
+    border-color: rgb(12, 129, 232);
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 15%;
 }
 div header{
     display:flex;
@@ -34,6 +43,12 @@ div header{
     justify-content: space-between;
     
    
+}
+nav a.router-link-exact-active {
+  color: #0a61a8;
+}
+.router-link-active {
+  font-weight: bold;
 }
 
 </style>
