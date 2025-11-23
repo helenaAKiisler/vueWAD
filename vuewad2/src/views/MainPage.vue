@@ -3,6 +3,7 @@
         <img alt="Vue logo" src="../assets/logo.png">
         <h1>This is the main page</h1>
         <div class="grid">
+            <posts />
         <div class="sidebar"></div>
         <div class="sidebar"></div>
     </div>
@@ -10,12 +11,11 @@
 </template>
 
 <script>
-import HeaderCompo from "@/components/Header.vue"
-import FooterCompo from "@/components/Footer.vue"
+import Posts from '@/components/Posts.vue';
 export default{
     name: "MainPage",
     components: {
-        HeaderCompo,FooterCompo
+        Posts
     }
 }
 </script>
