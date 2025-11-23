@@ -92,7 +92,7 @@ form {
     gap: 1rem 1rem;
     align-items: center;
     background-color: lightpink;
-    padding-bottom: 1rem;
+    padding: 1rem;
 }
 
 .form-grid label {

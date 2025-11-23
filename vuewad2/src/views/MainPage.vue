@@ -7,31 +7,18 @@
         <div class="sidebar"></div>
         <div class="sidebar"></div>
     </div>
-<<<<<<< HEAD
-=======
-    <reset-compo></reset-compo>
-    <footer-compo></footer-compo>
->>>>>>> 69690fb0449ae6256ab0410c3584fb297cce54e4
+
     </div>
 </template>
 
 <script>
-<<<<<<< HEAD
+
 import Posts from '@/components/Posts.vue';
 export default{
     name: "MainPage",
     components: {
         Posts
-=======
-import HeaderCompo from "@/components/HeaderCompo.vue"
-import FooterCompo from "@/components/Footer.vue"
-import PostCompo from "@/components/Posts.vue";
-import ResetCompo from "@/components/Reset.vue";
-export default{
-    name: "MainPage",
-    components: {
-        HeaderCompo,PostCompo,ResetCompo, FooterCompo
->>>>>>> 69690fb0449ae6256ab0410c3584fb297cce54e4
+        
     }
 }
 </script>
