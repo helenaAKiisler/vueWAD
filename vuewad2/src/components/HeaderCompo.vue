@@ -1,8 +1,8 @@
 <template>
     <header class="header">
         <nav class="nav">
-            <router-link to="/">Home</router-link> |
-            <router-link to="/signup">Sign-Up</router-link> |
+            <router-link to="/">Home</router-link> 
+            <router-link to="/signup">Sign-Up</router-link> 
         </nav>
     </header>
 </template>
@@ -24,6 +24,19 @@ export default{
     justify-content: space-between;
     background-color: lightskyblue;
 }
+.nav a {
+    padding: 10px 15px;
+    color: darkslategrey;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: lightskyblue;
+}
+.nav a:hover {
+    background-color: #f4c3cc;
+    color: #092747;
+}
+
 .header {
     top: 0;
     display: flex;
