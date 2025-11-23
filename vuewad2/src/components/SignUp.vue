@@ -70,11 +70,7 @@ export default {
 </script>
 
 <style>
-<<<<<<< HEAD
- 
-=======
 
->>>>>>> recover-password
 .signupBox{
     display: flex;
     flex-direction: column;

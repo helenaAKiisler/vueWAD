@@ -7,15 +7,31 @@
         <div class="sidebar"></div>
         <div class="sidebar"></div>
     </div>
+<<<<<<< HEAD
+=======
+    <reset-compo></reset-compo>
+    <footer-compo></footer-compo>
+>>>>>>> 69690fb0449ae6256ab0410c3584fb297cce54e4
     </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 import Posts from '@/components/Posts.vue';
 export default{
     name: "MainPage",
     components: {
         Posts
+=======
+import HeaderCompo from "@/components/HeaderCompo.vue"
+import FooterCompo from "@/components/Footer.vue"
+import PostCompo from "@/components/Posts.vue";
+import ResetCompo from "@/components/Reset.vue";
+export default{
+    name: "MainPage",
+    components: {
+        HeaderCompo,PostCompo,ResetCompo, FooterCompo
+>>>>>>> 69690fb0449ae6256ab0410c3584fb297cce54e4
     }
 }
 </script>
@@ -36,5 +52,13 @@ export default{
     justify-content: space-between;
     border-radius: 15px;
     box-shadow: 15%;
+}
+.grid{
+    display: grid;
+    grid-template-rows: auto;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    grid-template-columns: 18% 60% 18%;
+    gap: 2%;
 }
 </style>
