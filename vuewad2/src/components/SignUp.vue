@@ -9,7 +9,12 @@
         <label for="password">Password:</label>
         <input type="password" v-model="password" id="password" required />
       </div>
-
+      <div v-if="passwordErrors.length" class="error-messages">
+        <p>The password is not valid:</p>
+        <ul>
+          <li v-for="(error, index) in passwordErrors" :key="index">{{ error }}</li>
+        </ul>
+      </div>
       <button type="submit">Signup</button>
     </form>
   </section>
@@ -23,12 +28,40 @@ export default {
     return {
       name: "",
       email: "",
-      password: ""
+      password: "",
+      passwordErrors: []
     };
   },
   methods: {
+    validatePassword(password) {
+      const errors = [];
+
+      if (password.length < 8 || password.length >= 15) {
+        errors.push("Password must be at least 8 characters and less than 15 characters");
+      }
+      if (!/^[A-Z]/.test(password)) {
+        errors.push("Password must start with an uppercase alphabet");
+      }
+      if (!/[A-Z]/.test(password)) {
+        errors.push("Includes at least one uppercase alphabet character");
+      }
+      if ((password.match(/[a-z]/g) || []).length < 2) {
+        errors.push("Includes at least two lowercase alphabet characters");
+      }
+      if (!/\d/.test(password)) {
+        errors.push("Includes at least one numeric value");
+      }
+      if (!/_/.test(password)) {
+        errors.push('Includes the character "_"');
+      }
+
+      return errors;
+    },
     submitForm() {
       // Handle signup logic here
+      this.passwordErrors = this.validatePassword(this.password);
+
+      if (this.passwordErrors.length) return;
       console.log("Form submitted:", this.name, this.email, this.password);
       alert("Signup successful!");
     }
@@ -37,7 +70,11 @@ export default {
 </script>
 
 <style>
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> recover-password
 .signupBox{
     display: flex;
     flex-direction: column;
