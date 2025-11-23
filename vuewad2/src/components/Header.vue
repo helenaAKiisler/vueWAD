@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <nav>
+        <nav class="nav">
         <router-link to="/">Home</router-link> |
         <router-link to="/signup">SignUpPage</router-link> |
         <router-link to="/about">About</router-link>
@@ -15,4 +15,22 @@ export default{
 }
 </script>
 <style>
+*{
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: pink;
+}
+div header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+   
+}
+
 </style>
