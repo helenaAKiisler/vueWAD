@@ -14,7 +14,7 @@ export default{
     width: 100%;
     left: 0;
     bottom: 0;
-    background-color: #f3afbb;
+    background-color: lightskyblue;
     border-color: salmon;
     text-align: center;
     border-radius: 15px;

@@ -23,7 +23,10 @@ export default{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: pink;
+    background-color: lightskyblue;
+}
+.header{
+    background-color: lightskyblue;
 }
 div header{
     display:flex;
