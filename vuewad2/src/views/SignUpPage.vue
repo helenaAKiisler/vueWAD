@@ -1,16 +1,18 @@
 <template>
     <div class="signup">
-        <header-compo></header-compo>
         <h1>This is the sign-up page</h1>
+        <sign-up></sign-up>
     </div>
 </template>
 
 <script>
-import HeaderCompo from '@/components/HeaderCompo.vue';
+
+import SignUp from '@/components/SignUp.vue';
+
 export default{
     name: 'SignUpPage',
     components: {
-        HeaderCompo
+        SignUp
     }
 }
 </script>

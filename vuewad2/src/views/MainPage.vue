@@ -1,20 +1,13 @@
 <template>
-    <div class="mainPage">
-        <header-compo></header-compo>
-        <img alt="Vue logo" src="../assets/logo.png">
-        <h1>This is the main page</h1>
-        <footer-compo></footer-compo>
-    </div>
+  <div class="mainPage">
+    <img alt="Vue logo" src="../assets/logo.png">
+    <h1>This is the main page</h1>
+  </div>
 </template>
 
 <script>
-import HeaderCompo from "@/components/HeaderCompo.vue"
-import FooterCompo from "@/components/Footer.vue"
-export default{
-    name: "MainPage",
-    components: {
-        HeaderCompo, FooterCompo
-    }
+export default {
+  name: "MainPage"
 }
 </script>
 
