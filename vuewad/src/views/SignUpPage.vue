@@ -6,6 +6,6 @@
 
 <script>
 export default{
-    name: SignUpPage
+    name: 'SignUpPage',
 }
 </script>

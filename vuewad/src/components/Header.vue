@@ -1,14 +1,16 @@
 <template>
     <header class="header">
-        <ul class="nav">
-
-        </ul>
+        <nav>
+        <router-link to="/">Home</router-link> |
+        <router-link to="/signup">SignUpPage</router-link> |
+        <router-link to="/about">About</router-link>
+    </nav>
     </header>
 </template>
 
 <script>
 export default{
-    name: "Header",
+    name: "HeaderCompo",
 
 }
 </script>
