@@ -1,4 +1,5 @@
 <template>
+    <div class= "center">
     <section class="signupBox">
     <form @submit.prevent="submitForm">
       <div class="form-grid">
@@ -12,6 +13,7 @@
       <button type="submit">Signup</button>
     </form>
   </section>
+  </div>
 
 </template>
 <script>
@@ -35,6 +37,7 @@ export default {
 </script>
 
 <style>
+ 
 .signupBox{
     display: flex;
     flex-direction: column;
@@ -44,7 +47,7 @@ export default {
     background-color: lightpink;
     border-radius: 1em;
     padding: 2em;
-    max-width: 300px;
+    max-width: 330px;
 }
 form {
     background-color: lightpink;
@@ -73,5 +76,8 @@ button {
     cursor: pointer;
     font-size: 1em;
 }
-
+.center {
+  display: flex;
+  justify-content: center;
+ }
 </style>
